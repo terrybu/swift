@@ -46,8 +46,8 @@ class ProductViewController: UITableViewController {
 
         // Configure the cell...
 
-        cell.textLabel.text = self.company.products[indexPath.row].name
-        cell.imageView.image = UIImage(named: self.company.products[indexPath.row].image)
+        cell.textLabel!.text = self.company.products[indexPath.row].name
+        cell.imageView!.image = UIImage(named: self.company.products[indexPath.row].image)
         
         return cell
     }

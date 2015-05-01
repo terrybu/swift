@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
         //constant and variable declaration
         let myConstant = 25;
         var myVariable = 11;
@@ -63,13 +62,12 @@ class ViewController: UIViewController {
         
         emptyArray.append("hi")
         println(emptyArray)
-        
-        
-        
-        //Control Flow if else
-        //Parentheses around the condition or loop variable are optional. Braces around the body are required.
+
         let guysAges = [23, 24, 25, 26, 27]
         for age in guysAges {
+            
+            //Control Flow if else
+            //Parentheses around the condition or loop variable are optional. Braces around the body are required.
             if age < 26 {
                 println("younger than terry")
             }
@@ -112,9 +110,9 @@ class ViewController: UIViewController {
         println(randomResult2)
         
         
-        //Functions and closures
-        /* Use func to declare a function. Call a function by following its name with a list of arguments in parentheses. Use -> to separate the parameter names and types from the function’s return type. */
-        
+        //Functions
+        //Use func to declare a function. Call a function by following its name with a list of arguments in parentheses.
+
         func greet (name: String, lunchSpecial: String) -> String {
             var returnString = "Hello, \(name), today's lunch special is \(lunchSpecial)!"
             println(returnString)
@@ -124,6 +122,18 @@ class ViewController: UIViewController {
         
         
         
+        //Looping through Key Values!
+        var myDictionary = [
+            "fruit" : "melon",
+            "meat" : "chicken",
+            "visa" : "USA"
+        ];
+        
+        for (myKey, myValue) in myDictionary {
+            println("\(myKey) has what in it?: \(myValue)");
+        }
+        
+
     }
 
     override func didReceiveMemoryWarning() {

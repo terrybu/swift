@@ -48,8 +48,8 @@ class CompanyViewController: UITableViewController {
 
         // Configure the cell...
 
-        cell.textLabel.text = self.dao.companies![indexPath.row].name;
-        cell.imageView.image = UIImage(named: self.dao.companies![indexPath.row].image!);
+        cell.textLabel!.text = self.dao.companies![indexPath.row].name;
+        cell.imageView!.image = UIImage(named: self.dao.companies![indexPath.row].image!);
         return cell
     }
 
