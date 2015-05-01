@@ -15,6 +15,7 @@
 		D93F59221AF3DE5C00011932 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59211AF3DE5C00011932 /* Contact.swift */; };
 		D93F59241AF3DF8200011932 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59231AF3DF8200011932 /* LandingPageViewController.swift */; };
 		D93F59261AF3E08800011932 /* MultiSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */; };
+		D93F592A1AF3E73A00011932 /* TBContactsGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = D93F59291AF3E73A00011932 /* TBContactsGrabber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		D93F59211AF3DE5C00011932 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D93F59231AF3DF8200011932 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSelectTableViewController.swift; sourceTree = "<group>"; };
+		D93F59271AF3E73900011932 /* SwiftAddressbookContactsMultiSelection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftAddressbookContactsMultiSelection-Bridging-Header.h"; sourceTree = "<group>"; };
+		D93F59281AF3E73A00011932 /* TBContactsGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBContactsGrabber.h; sourceTree = "<group>"; };
+		D93F59291AF3E73A00011932 /* TBContactsGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBContactsGrabber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +87,15 @@
 			children = (
 				D93F59011AF3DD2400011932 /* AppDelegate.swift */,
 				D93F59211AF3DE5C00011932 /* Contact.swift */,
+				D93F59281AF3E73A00011932 /* TBContactsGrabber.h */,
+				D93F59291AF3E73A00011932 /* TBContactsGrabber.m */,
 				D93F59051AF3DD2400011932 /* Main.storyboard */,
 				D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */,
 				D93F59231AF3DF8200011932 /* LandingPageViewController.swift */,
 				D93F59081AF3DD2400011932 /* Images.xcassets */,
 				D93F590A1AF3DD2400011932 /* LaunchScreen.xib */,
 				D93F58FF1AF3DD2400011932 /* Supporting Files */,
+				D93F59271AF3E73900011932 /* SwiftAddressbookContactsMultiSelection-Bridging-Header.h */,
 			);
 			path = SwiftAddressbookContactsMultiSelection;
 			sourceTree = "<group>";
@@ -221,6 +228,7 @@
 				D93F59221AF3DE5C00011932 /* Contact.swift in Sources */,
 				D93F59261AF3E08800011932 /* MultiSelectTableViewController.swift in Sources */,
 				D93F59241AF3DF8200011932 /* LandingPageViewController.swift in Sources */,
+				D93F592A1AF3E73A00011932 /* TBContactsGrabber.m in Sources */,
 				D93F59021AF3DD2400011932 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,9 +358,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SwiftAddressbookContactsMultiSelection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAddressbookContactsMultiSelection/SwiftAddressbookContactsMultiSelection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -360,9 +372,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SwiftAddressbookContactsMultiSelection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAddressbookContactsMultiSelection/SwiftAddressbookContactsMultiSelection-Bridging-Header.h";
 			};
 			name = Release;
 		};
