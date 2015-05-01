@@ -44,7 +44,7 @@ class CompanyViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
 
@@ -94,7 +94,7 @@ class CompanyViewController: UITableViewController {
   
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "childViewSegue") {
-            let productVC: ProductViewController = segue.destinationViewController as ProductViewController
+            let productVC: ProductViewController = segue.destinationViewController as! ProductViewController
             let indexPath = self.tableView.indexPathForSelectedRow()
 
             productVC.company = self.dao.companies![indexPath!.row]

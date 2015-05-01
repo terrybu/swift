@@ -42,7 +42,7 @@ class ProductViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
 
@@ -88,7 +88,7 @@ class ProductViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
             if (segue.identifier == "webViewSegue") {
-                var webVC: WebViewController = segue.destinationViewController as WebViewController
+                var webVC: WebViewController = segue.destinationViewController as! WebViewController
                 var indexPath = self.tableView.indexPathForSelectedRow()
                 
                 webVC.product = self.company.products[indexPath!.row]
