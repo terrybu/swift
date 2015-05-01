@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D93F59021AF3DD2400011932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59011AF3DD2400011932 /* AppDelegate.swift */; };
+		D93F59071AF3DD2400011932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93F59051AF3DD2400011932 /* Main.storyboard */; };
+		D93F59091AF3DD2400011932 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F59081AF3DD2400011932 /* Images.xcassets */; };
+		D93F590C1AF3DD2400011932 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93F590A1AF3DD2400011932 /* LaunchScreen.xib */; };
+		D93F59181AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59171AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.swift */; };
+		D93F59221AF3DE5C00011932 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59211AF3DE5C00011932 /* Contact.swift */; };
+		D93F59241AF3DF8200011932 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59231AF3DF8200011932 /* LandingPageViewController.swift */; };
+		D93F59261AF3E08800011932 /* MultiSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D93F59121AF3DD2400011932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D93F58F41AF3DD2400011932 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D93F58FB1AF3DD2400011932;
+			remoteInfo = SwiftAddressbookContactsMultiSelection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D93F58FC1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAddressbookContactsMultiSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93F59001AF3DD2400011932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93F59011AF3DD2400011932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D93F59061AF3DD2400011932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D93F59081AF3DD2400011932 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D93F590B1AF3DD2400011932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D93F59111AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAddressbookContactsMultiSelectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93F59161AF3DD2400011932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93F59171AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAddressbookContactsMultiSelectionTests.swift; sourceTree = "<group>"; };
+		D93F59211AF3DE5C00011932 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		D93F59231AF3DF8200011932 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSelectTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D93F58F91AF3DD2400011932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93F590E1AF3DD2400011932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D93F58F31AF3DD2400011932 = {
+			isa = PBXGroup;
+			children = (
+				D93F58FE1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection */,
+				D93F59141AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests */,
+				D93F58FD1AF3DD2400011932 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D93F58FD1AF3DD2400011932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D93F58FC1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection.app */,
+				D93F59111AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D93F58FE1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection */ = {
+			isa = PBXGroup;
+			children = (
+				D93F59011AF3DD2400011932 /* AppDelegate.swift */,
+				D93F59211AF3DE5C00011932 /* Contact.swift */,
+				D93F59051AF3DD2400011932 /* Main.storyboard */,
+				D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */,
+				D93F59231AF3DF8200011932 /* LandingPageViewController.swift */,
+				D93F59081AF3DD2400011932 /* Images.xcassets */,
+				D93F590A1AF3DD2400011932 /* LaunchScreen.xib */,
+				D93F58FF1AF3DD2400011932 /* Supporting Files */,
+			);
+			path = SwiftAddressbookContactsMultiSelection;
+			sourceTree = "<group>";
+		};
+		D93F58FF1AF3DD2400011932 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D93F59001AF3DD2400011932 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D93F59141AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				D93F59171AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.swift */,
+				D93F59151AF3DD2400011932 /* Supporting Files */,
+			);
+			path = SwiftAddressbookContactsMultiSelectionTests;
+			sourceTree = "<group>";
+		};
+		D93F59151AF3DD2400011932 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D93F59161AF3DD2400011932 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D93F58FB1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93F591B1AF3DD2400011932 /* Build configuration list for PBXNativeTarget "SwiftAddressbookContactsMultiSelection" */;
+			buildPhases = (
+				D93F58F81AF3DD2400011932 /* Sources */,
+				D93F58F91AF3DD2400011932 /* Frameworks */,
+				D93F58FA1AF3DD2400011932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftAddressbookContactsMultiSelection;
+			productName = SwiftAddressbookContactsMultiSelection;
+			productReference = D93F58FC1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D93F59101AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93F591E1AF3DD2400011932 /* Build configuration list for PBXNativeTarget "SwiftAddressbookContactsMultiSelectionTests" */;
+			buildPhases = (
+				D93F590D1AF3DD2400011932 /* Sources */,
+				D93F590E1AF3DD2400011932 /* Frameworks */,
+				D93F590F1AF3DD2400011932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D93F59131AF3DD2400011932 /* PBXTargetDependency */,
+			);
+			name = SwiftAddressbookContactsMultiSelectionTests;
+			productName = SwiftAddressbookContactsMultiSelectionTests;
+			productReference = D93F59111AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D93F58F41AF3DD2400011932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Terry Bu";
+				TargetAttributes = {
+					D93F58FB1AF3DD2400011932 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					D93F59101AF3DD2400011932 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = D93F58FB1AF3DD2400011932;
+					};
+				};
+			};
+			buildConfigurationList = D93F58F71AF3DD2400011932 /* Build configuration list for PBXProject "SwiftAddressbookContactsMultiSelection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D93F58F31AF3DD2400011932;
+			productRefGroup = D93F58FD1AF3DD2400011932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D93F58FB1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection */,
+				D93F59101AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D93F58FA1AF3DD2400011932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93F59071AF3DD2400011932 /* Main.storyboard in Resources */,
+				D93F590C1AF3DD2400011932 /* LaunchScreen.xib in Resources */,
+				D93F59091AF3DD2400011932 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93F590F1AF3DD2400011932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D93F58F81AF3DD2400011932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93F59221AF3DE5C00011932 /* Contact.swift in Sources */,
+				D93F59261AF3E08800011932 /* MultiSelectTableViewController.swift in Sources */,
+				D93F59241AF3DF8200011932 /* LandingPageViewController.swift in Sources */,
+				D93F59021AF3DD2400011932 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93F590D1AF3DD2400011932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93F59181AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D93F59131AF3DD2400011932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D93F58FB1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection */;
+			targetProxy = D93F59121AF3DD2400011932 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D93F59051AF3DD2400011932 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D93F59061AF3DD2400011932 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D93F590A1AF3DD2400011932 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D93F590B1AF3DD2400011932 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D93F59191AF3DD2400011932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D93F591A1AF3DD2400011932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D93F591C1AF3DD2400011932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftAddressbookContactsMultiSelection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D93F591D1AF3DD2400011932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftAddressbookContactsMultiSelection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D93F591F1AF3DD2400011932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftAddressbookContactsMultiSelectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAddressbookContactsMultiSelection.app/SwiftAddressbookContactsMultiSelection";
+			};
+			name = Debug;
+		};
+		D93F59201AF3DD2400011932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftAddressbookContactsMultiSelectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAddressbookContactsMultiSelection.app/SwiftAddressbookContactsMultiSelection";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D93F58F71AF3DD2400011932 /* Build configuration list for PBXProject "SwiftAddressbookContactsMultiSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93F59191AF3DD2400011932 /* Debug */,
+				D93F591A1AF3DD2400011932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93F591B1AF3DD2400011932 /* Build configuration list for PBXNativeTarget "SwiftAddressbookContactsMultiSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93F591C1AF3DD2400011932 /* Debug */,
+				D93F591D1AF3DD2400011932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D93F591E1AF3DD2400011932 /* Build configuration list for PBXNativeTarget "SwiftAddressbookContactsMultiSelectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93F591F1AF3DD2400011932 /* Debug */,
+				D93F59201AF3DD2400011932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D93F58F41AF3DD2400011932 /* Project object */;
+}

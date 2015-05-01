@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sjg-XS-raN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Landing Page-->
+        <scene sceneID="fWN-fa-ypj">
+            <objects>
+                <viewController id="9DX-iZ-Xrn" customClass="LandingPageViewController" customModule="SwiftAddressbookContactsMultiSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x0Y-2G-6yX"/>
+                        <viewControllerLayoutGuide type="bottom" id="0XV-kH-Dkq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nx3-sq-pKP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your mind is about to get blown with awesome addressbook contacts" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bw-nY-0sN">
+                                <rect key="frame" x="140" y="262" width="321" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="321" id="0q5-G7-y5w"/>
+                                    <constraint firstAttribute="height" constant="75" id="MMk-x9-Sxo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="0Bw-nY-0sN" secondAttribute="centerY" id="h6u-tK-bWp"/>
+                            <constraint firstAttribute="centerX" secondItem="0Bw-nY-0sN" secondAttribute="centerX" id="xFO-IY-qak"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Landing Page" id="CAI-Mp-AbF">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="FTI-NW-wbb"/>
+                        <barButtonItem key="rightBarButtonItem" title="Contacts" id="LYr-i9-lVa">
+                            <color key="tintColor" red="0.20214790900985738" green="0.37718918390381478" blue="0.79964524507522583" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="5JV-0L-kPq" kind="show" id="lvx-5p-SqI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuQ-9D-6pG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486" y="-28"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="TMU-a5-kAW">
+            <objects>
+                <tableViewController title="Contacts" id="5JV-0L-kPq" customClass="MultiSelectTableViewController" customModule="SwiftAddressbookContactsMultiSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4Dd-dy-8Ba">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ZgY-pc-KUJ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZgY-pc-KUJ" id="I2J-25-jOT">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5JV-0L-kPq" id="0uH-yd-zIv"/>
+                            <outlet property="delegate" destination="5JV-0L-kPq" id="iq5-4R-gdJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVK-nV-Mcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184" y="-28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1fa-Gk-ZBE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sjg-XS-raN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b23-cv-rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99517856280000005" green="0.79541831949999997" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9DX-iZ-Xrn" kind="relationship" relationship="rootViewController" id="q62-8O-zGs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ek-XK-QrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1171" y="-28"/>
+        </scene>
+    </scenes>
+</document>
