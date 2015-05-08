@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <AddressBook/AddressBook.h>
-#import "SwiftAddressbookContactsMultiSelection-Swift.h"
+
+@class Contact;
 
 @protocol TBContactsGrabberDelegate;
 

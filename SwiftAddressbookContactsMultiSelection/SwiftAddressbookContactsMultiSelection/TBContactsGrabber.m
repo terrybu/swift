@@ -7,6 +7,7 @@
 //
 
 #import "TBContactsGrabber.h"
+#import "SwiftAddressbookContactsMultiSelection-Swift.h"
 
 @implementation TBContactsGrabber
 

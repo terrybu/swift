@@ -9,6 +9,8 @@
 import UIKit
 
 class LandingPageViewController: UIViewController {
+    
+    var contactsGrabber: TBContactsGrabber?
 
     override func viewDidLoad() {
         super.viewDidLoad()

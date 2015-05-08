@@ -14,7 +14,6 @@
 		D93F59181AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59171AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.swift */; };
 		D93F59221AF3DE5C00011932 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59211AF3DE5C00011932 /* Contact.swift */; };
 		D93F59241AF3DF8200011932 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59231AF3DF8200011932 /* LandingPageViewController.swift */; };
-		D93F59261AF3E08800011932 /* MultiSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */; };
 		D93F592A1AF3E73A00011932 /* TBContactsGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = D93F59291AF3E73A00011932 /* TBContactsGrabber.m */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +39,9 @@
 		D93F59171AF3DD2400011932 /* SwiftAddressbookContactsMultiSelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAddressbookContactsMultiSelectionTests.swift; sourceTree = "<group>"; };
 		D93F59211AF3DE5C00011932 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D93F59231AF3DF8200011932 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
-		D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSelectTableViewController.swift; sourceTree = "<group>"; };
-		D93F59271AF3E73900011932 /* SwiftAddressbookContactsMultiSelection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftAddressbookContactsMultiSelection-Bridging-Header.h"; sourceTree = "<group>"; };
 		D93F59281AF3E73A00011932 /* TBContactsGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBContactsGrabber.h; sourceTree = "<group>"; };
 		D93F59291AF3E73A00011932 /* TBContactsGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBContactsGrabber.m; sourceTree = "<group>"; };
+		D94D46791AFC147E00402E96 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +88,11 @@
 				D93F59281AF3E73A00011932 /* TBContactsGrabber.h */,
 				D93F59291AF3E73A00011932 /* TBContactsGrabber.m */,
 				D93F59051AF3DD2400011932 /* Main.storyboard */,
-				D93F59251AF3E08800011932 /* MultiSelectTableViewController.swift */,
 				D93F59231AF3DF8200011932 /* LandingPageViewController.swift */,
 				D93F59081AF3DD2400011932 /* Images.xcassets */,
 				D93F590A1AF3DD2400011932 /* LaunchScreen.xib */,
 				D93F58FF1AF3DD2400011932 /* Supporting Files */,
-				D93F59271AF3E73900011932 /* SwiftAddressbookContactsMultiSelection-Bridging-Header.h */,
+				D94D46791AFC147E00402E96 /* BridgeHeader.h */,
 			);
 			path = SwiftAddressbookContactsMultiSelection;
 			sourceTree = "<group>";
@@ -226,7 +223,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93F59221AF3DE5C00011932 /* Contact.swift in Sources */,
-				D93F59261AF3E08800011932 /* MultiSelectTableViewController.swift in Sources */,
 				D93F59241AF3DF8200011932 /* LandingPageViewController.swift in Sources */,
 				D93F592A1AF3E73A00011932 /* TBContactsGrabber.m in Sources */,
 				D93F59021AF3DD2400011932 /* AppDelegate.swift in Sources */,
@@ -311,6 +307,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -349,6 +346,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -363,7 +361,7 @@
 				INFOPLIST_FILE = SwiftAddressbookContactsMultiSelection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAddressbookContactsMultiSelection/SwiftAddressbookContactsMultiSelection-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftAddressbookContactsMultiSelection/BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -377,7 +375,7 @@
 				INFOPLIST_FILE = SwiftAddressbookContactsMultiSelection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAddressbookContactsMultiSelection/SwiftAddressbookContactsMultiSelection-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftAddressbookContactsMultiSelection/BridgeHeader.h;
 			};
 			name = Release;
 		};
@@ -434,6 +432,7 @@
 				D93F591D1AF3DD2400011932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D93F591E1AF3DD2400011932 /* Build configuration list for PBXNativeTarget "SwiftAddressbookContactsMultiSelectionTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +441,7 @@
 				D93F59201AF3DD2400011932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
