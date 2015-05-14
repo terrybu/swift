@@ -13,7 +13,8 @@
 		D9B932841B04393900E2B797 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B932831B04393900E2B797 /* Images.xcassets */; };
 		D9B932871B04393900E2B797 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B932851B04393900E2B797 /* LaunchScreen.xib */; };
 		D9B932931B04393900E2B797 /* ObjectSwiftMixProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B932921B04393900E2B797 /* ObjectSwiftMixProjectTests.swift */; };
-		D9B9329F1B0439F000E2B797 /* ObjectivePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B9329E1B0439F000E2B797 /* ObjectivePerson.m */; };
+		D9B932CF1B04466300E2B797 /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B932CE1B04466300E2B797 /* SwiftObject.swift */; };
+		D9B932D21B044E1200E2B797 /* ObjectivePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B932D11B044E1200E2B797 /* ObjectivePerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,9 @@
 		D9B932911B04393900E2B797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9B932921B04393900E2B797 /* ObjectSwiftMixProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectSwiftMixProjectTests.swift; sourceTree = "<group>"; };
 		D9B9329C1B0439EF00E2B797 /* ObjectSwiftMixProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectSwiftMixProject-Bridging-Header.h"; sourceTree = "<group>"; };
-		D9B9329D1B0439F000E2B797 /* ObjectivePerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectivePerson.h; sourceTree = "<group>"; };
-		D9B9329E1B0439F000E2B797 /* ObjectivePerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectivePerson.m; sourceTree = "<group>"; };
+		D9B932CE1B04466300E2B797 /* SwiftObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftObject.swift; sourceTree = "<group>"; };
+		D9B932D01B044E1200E2B797 /* ObjectivePerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectivePerson.h; sourceTree = "<group>"; };
+		D9B932D11B044E1200E2B797 /* ObjectivePerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectivePerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,9 @@
 			children = (
 				D9B9327C1B04393900E2B797 /* AppDelegate.swift */,
 				D9B9327E1B04393900E2B797 /* ViewController.swift */,
-				D9B9329D1B0439F000E2B797 /* ObjectivePerson.h */,
-				D9B9329E1B0439F000E2B797 /* ObjectivePerson.m */,
+				D9B932CE1B04466300E2B797 /* SwiftObject.swift */,
+				D9B932D01B044E1200E2B797 /* ObjectivePerson.h */,
+				D9B932D11B044E1200E2B797 /* ObjectivePerson.m */,
 				D9B932801B04393900E2B797 /* Main.storyboard */,
 				D9B932831B04393900E2B797 /* Images.xcassets */,
 				D9B932851B04393900E2B797 /* LaunchScreen.xib */,
@@ -219,8 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B932CF1B04466300E2B797 /* SwiftObject.swift in Sources */,
 				D9B9327F1B04393900E2B797 /* ViewController.swift in Sources */,
-				D9B9329F1B0439F000E2B797 /* ObjectivePerson.m in Sources */,
+				D9B932D21B044E1200E2B797 /* ObjectivePerson.m in Sources */,
 				D9B9327D1B04393900E2B797 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

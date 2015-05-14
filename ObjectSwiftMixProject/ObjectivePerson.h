@@ -8,13 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class SwiftObject;
-
 @interface ObjectivePerson : NSObject
-
-@property (nonatomic, strong) SwiftObject *swiftObject;
-
-
-- (void) useThatSwiftObject;
 
 @end
