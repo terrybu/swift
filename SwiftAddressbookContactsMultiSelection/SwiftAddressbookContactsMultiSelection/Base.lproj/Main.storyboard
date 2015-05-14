@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sjg-XS-raN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sjg-XS-raN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Landing Page-->
@@ -38,7 +38,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Contacts" id="LYr-i9-lVa">
                             <color key="tintColor" red="0.20214790900985738" green="0.37718918390381478" blue="0.79964524507522583" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="5JV-0L-kPq" kind="show" id="lvx-5p-SqI"/>
+                                <segue destination="rl1-7e-AJG" kind="show" id="G8m-hj-SY5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -47,31 +47,35 @@
             </objects>
             <point key="canvasLocation" x="-486" y="-28"/>
         </scene>
-        <!--Contacts-->
-        <scene sceneID="TMU-a5-kAW">
+        <!--Select Yo Contacts-->
+        <scene sceneID="nin-eV-oZ4">
             <objects>
-                <tableViewController title="Contacts" id="5JV-0L-kPq" customClass="MultiSelectTableViewController" customModule="SwiftAddressbookContactsMultiSelection" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4Dd-dy-8Ba">
+                <viewController title="Select Yo Contacts" id="rl1-7e-AJG" customClass="ContactsSelectionTableViewController" customModule="SwiftAddressbookContactsMultiSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zGJ-9e-34x"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ale-VG-q5m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="smp-cW-zJk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UoX-sn-tEK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ZgY-pc-KUJ">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZgY-pc-KUJ" id="I2J-25-jOT">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="5JV-0L-kPq" id="0uH-yd-zIv"/>
-                            <outlet property="delegate" destination="5JV-0L-kPq" id="iq5-4R-gdJ"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pVK-nV-Mcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="Ale-VG-q5m" firstAttribute="top" secondItem="UoX-sn-tEK" secondAttribute="bottom" id="74Z-I6-xDz"/>
+                            <constraint firstAttribute="trailing" secondItem="UoX-sn-tEK" secondAttribute="trailing" id="OAP-bu-COk"/>
+                            <constraint firstItem="UoX-sn-tEK" firstAttribute="leading" secondItem="smp-cW-zJk" secondAttribute="leading" id="g81-QM-wp8"/>
+                            <constraint firstItem="UoX-sn-tEK" firstAttribute="top" secondItem="zGJ-9e-34x" secondAttribute="bottom" constant="-64" id="sfs-iZ-6Yx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoK-ca-caK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="-28"/>
+            <point key="canvasLocation" x="216" y="-28"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1fa-Gk-ZBE">

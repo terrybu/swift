@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D925D7671AFD55E100901967 /* ContactsSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D925D7661AFD55E100901967 /* ContactsSelectionTableViewController.swift */; };
 		D93F59021AF3DD2400011932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F59011AF3DD2400011932 /* AppDelegate.swift */; };
 		D93F59071AF3DD2400011932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93F59051AF3DD2400011932 /* Main.storyboard */; };
 		D93F59091AF3DD2400011932 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F59081AF3DD2400011932 /* Images.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D925D7661AFD55E100901967 /* ContactsSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsSelectionTableViewController.swift; sourceTree = "<group>"; };
 		D93F58FC1AF3DD2400011932 /* SwiftAddressbookContactsMultiSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAddressbookContactsMultiSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93F59001AF3DD2400011932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93F59011AF3DD2400011932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				D93F59291AF3E73A00011932 /* TBContactsGrabber.m */,
 				D93F59051AF3DD2400011932 /* Main.storyboard */,
 				D93F59231AF3DF8200011932 /* LandingPageViewController.swift */,
+				D925D7661AFD55E100901967 /* ContactsSelectionTableViewController.swift */,
 				D93F59081AF3DD2400011932 /* Images.xcassets */,
 				D93F590A1AF3DD2400011932 /* LaunchScreen.xib */,
 				D93F58FF1AF3DD2400011932 /* Supporting Files */,
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D925D7671AFD55E100901967 /* ContactsSelectionTableViewController.swift in Sources */,
 				D93F59221AF3DE5C00011932 /* Contact.swift in Sources */,
 				D93F59241AF3DF8200011932 /* LandingPageViewController.swift in Sources */,
 				D93F592A1AF3E73A00011932 /* TBContactsGrabber.m in Sources */,
