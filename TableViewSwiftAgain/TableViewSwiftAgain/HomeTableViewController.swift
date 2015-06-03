@@ -16,14 +16,17 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     //Adding Properties
     @IBOutlet var tableView: UITableView!
-    var items = ["Lebron", "Curry", "Wade", "Ginobili"];
+    var tableDataArray = ["Lebron", "Curry", "Wade", "Ginobili", "Jordan", "Payton", "Duncan", "Westbrook", "Durant"];
     let searchController = UISearchController(searchResultsController: nil);
+    var filteredResultsArray = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad();
         
         searchController.searchResultsUpdater = self;
-        searchController.searchBar.sizeToFit();
+        searchController.searchBar.sizeToFit(); //if you don't do this, you don't see searchbar for some reason
+//        controller.dimsBackgroundDuringPresentation = false //if you don't like dimming
+
         self.tableView.tableHeaderView = searchController.searchBar;
     }
     
@@ -32,24 +35,38 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count;
+        if searchController.active {
+            return filteredResultsArray.count
+        }
+        else{
+            return tableDataArray.count
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
+        var cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        if searchController.active {
+            cell.textLabel?.text = filteredResultsArray[indexPath.row]
+        }
+        else{
+            cell.textLabel?.text = tableDataArray[indexPath.row]
+        }
+        
         return cell;
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("\(self.items[indexPath.row]) was clicked");
+        println("\(tableDataArray[indexPath.row]) was clicked");
     }
     
     
     //Delegate Methods
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        
+        filteredResultsArray.removeAll(keepCapacity: false);
+        let mySearchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text)
+        filteredResultsArray = (tableDataArray as NSArray).filteredArrayUsingPredicate(mySearchPredicate) as! [String];
+        tableView.reloadData();
     }
     
     

@@ -4,17 +4,12 @@ import UIKit
 
 var str = "Hello, playground"
 
-struct User {
-    var age: Int
-    
-    init (age : Int) {
-        self.age = age;
-    }
-}
+var mySwiftArray = ["blah", "shit"];
 
-var user1 = User(age: 15);
+var myNSArray = mySwiftArray as NSArray;
 
-user1.age = 20;
+var giveMeSwiftArrayAgain = myNSArray as! [String];
 
 
+giveMeSwiftArrayAgain
 
