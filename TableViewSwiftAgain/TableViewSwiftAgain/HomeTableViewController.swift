@@ -8,17 +8,23 @@
 
 import UIKit
 
-class HomeTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
     
     //note how you name protocols in swift now, almost like declaring the class, just add comma
     //adding uitableviewdatasource as protocol will throw compiler error red until you add functions
     //numberofrowsinsection and cellforrowatindexpath
     
+    //Adding Properties
     @IBOutlet var tableView: UITableView!
     var items = ["Lebron", "Curry", "Wade", "Ginobili"];
-    
+    let searchController = UISearchController(searchResultsController: nil);
+
     override func viewDidLoad() {
         super.viewDidLoad();
+        
+        searchController.searchResultsUpdater = self;
+        searchController.searchBar.sizeToFit();
+        self.tableView.tableHeaderView = searchController.searchBar;
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -38,6 +44,12 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("\(self.items[indexPath.row]) was clicked");
+    }
+    
+    
+    //Delegate Methods
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        
     }
     
     
