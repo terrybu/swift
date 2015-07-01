@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B00157490F2E115BC2A4B10 /* libPods-MLPTextFieldTestSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5256CFF013EBC5D33E7E976A /* libPods-MLPTextFieldTestSwift.a */; };
+		D93BCB9B1B2B7CFF000C8CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BCB9A1B2B7CFF000C8CD0 /* AppDelegate.swift */; };
+		D93BCB9D1B2B7CFF000C8CD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BCB9C1B2B7CFF000C8CD0 /* ViewController.swift */; };
+		D93BCBA21B2B7CFF000C8CD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93BCBA11B2B7CFF000C8CD0 /* Images.xcassets */; };
+		D93BCBA51B2B7CFF000C8CD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93BCBA31B2B7CFF000C8CD0 /* LaunchScreen.xib */; };
+		D93BCBB11B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BCBB01B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests.swift */; };
+		D9E1891B1B2D3F2B003BCD9A /* DEMODataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E189181B2D3F2B003BCD9A /* DEMODataSource.m */; };
+		D9E1891C1B2D3F2B003BCD9A /* DEMOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E1891A1B2D3F2B003BCD9A /* DEMOViewController.m */; };
+		D9E189211B2D3F62003BCD9A /* DEMOCustomAutoCompleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E1891E1B2D3F62003BCD9A /* DEMOCustomAutoCompleteCell.m */; };
+		D9E189221B2D3F62003BCD9A /* DEMOCustomAutoCompleteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E189201B2D3F62003BCD9A /* DEMOCustomAutoCompleteObject.m */; };
+		D9E189241B2D3F7B003BCD9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E189231B2D3F7B003BCD9A /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D93BCBAB1B2B7CFF000C8CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D93BCB8D1B2B7CFF000C8CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D93BCB941B2B7CFF000C8CD0;
+			remoteInfo = MLPTextFieldTestSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28A7D3B582C505AC02977C65 /* Pods-MLPTextFieldTestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLPTextFieldTestSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLPTextFieldTestSwift/Pods-MLPTextFieldTestSwift.release.xcconfig"; sourceTree = "<group>"; };
+		5256CFF013EBC5D33E7E976A /* libPods-MLPTextFieldTestSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLPTextFieldTestSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C694988B26B8F606E843AC /* Pods-MLPTextFieldTestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLPTextFieldTestSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLPTextFieldTestSwift/Pods-MLPTextFieldTestSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		D93BCB951B2B7CFF000C8CD0 /* MLPTextFieldTestSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLPTextFieldTestSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93BCB991B2B7CFF000C8CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93BCB9A1B2B7CFF000C8CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D93BCB9C1B2B7CFF000C8CD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D93BCBA11B2B7CFF000C8CD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D93BCBA41B2B7CFF000C8CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D93BCBAA1B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLPTextFieldTestSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93BCBAF1B2B7CFF000C8CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93BCBB01B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLPTextFieldTestSwiftTests.swift; sourceTree = "<group>"; };
+		D9E189171B2D3F2B003BCD9A /* DEMODataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMODataSource.h; sourceTree = "<group>"; };
+		D9E189181B2D3F2B003BCD9A /* DEMODataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMODataSource.m; sourceTree = "<group>"; };
+		D9E189191B2D3F2B003BCD9A /* DEMOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOViewController.h; sourceTree = "<group>"; };
+		D9E1891A1B2D3F2B003BCD9A /* DEMOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOViewController.m; sourceTree = "<group>"; };
+		D9E1891D1B2D3F62003BCD9A /* DEMOCustomAutoCompleteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOCustomAutoCompleteCell.h; sourceTree = "<group>"; };
+		D9E1891E1B2D3F62003BCD9A /* DEMOCustomAutoCompleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOCustomAutoCompleteCell.m; sourceTree = "<group>"; };
+		D9E1891F1B2D3F62003BCD9A /* DEMOCustomAutoCompleteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOCustomAutoCompleteObject.h; sourceTree = "<group>"; };
+		D9E189201B2D3F62003BCD9A /* DEMOCustomAutoCompleteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOCustomAutoCompleteObject.m; sourceTree = "<group>"; };
+		D9E189231B2D3F7B003BCD9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D9EFE6BD1B2D313D00AEDFB6 /* MLPTextFieldTestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MLPTextFieldTestSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D93BCB921B2B7CFF000C8CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E189241B2D3F7B003BCD9A /* QuartzCore.framework in Frameworks */,
+				7B00157490F2E115BC2A4B10 /* libPods-MLPTextFieldTestSwift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93BCBA71B2B7CFF000C8CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		714823EDB2A24E0E87AFA38D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9E189231B2D3F7B003BCD9A /* QuartzCore.framework */,
+				5256CFF013EBC5D33E7E976A /* libPods-MLPTextFieldTestSwift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF4F76E9A04387BA36EC44AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4C694988B26B8F606E843AC /* Pods-MLPTextFieldTestSwift.debug.xcconfig */,
+				28A7D3B582C505AC02977C65 /* Pods-MLPTextFieldTestSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D93BCB8C1B2B7CFF000C8CD0 = {
+			isa = PBXGroup;
+			children = (
+				D93BCB971B2B7CFF000C8CD0 /* MLPTextFieldTestSwift */,
+				D93BCBAD1B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests */,
+				D93BCB961B2B7CFF000C8CD0 /* Products */,
+				AF4F76E9A04387BA36EC44AE /* Pods */,
+				714823EDB2A24E0E87AFA38D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D93BCB961B2B7CFF000C8CD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D93BCB951B2B7CFF000C8CD0 /* MLPTextFieldTestSwift.app */,
+				D93BCBAA1B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D93BCB971B2B7CFF000C8CD0 /* MLPTextFieldTestSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D93BCB9A1B2B7CFF000C8CD0 /* AppDelegate.swift */,
+				D93BCB9C1B2B7CFF000C8CD0 /* ViewController.swift */,
+				D9E189171B2D3F2B003BCD9A /* DEMODataSource.h */,
+				D9E189181B2D3F2B003BCD9A /* DEMODataSource.m */,
+				D9E189191B2D3F2B003BCD9A /* DEMOViewController.h */,
+				D9E1891A1B2D3F2B003BCD9A /* DEMOViewController.m */,
+				D9E1891D1B2D3F62003BCD9A /* DEMOCustomAutoCompleteCell.h */,
+				D9E1891E1B2D3F62003BCD9A /* DEMOCustomAutoCompleteCell.m */,
+				D9E1891F1B2D3F62003BCD9A /* DEMOCustomAutoCompleteObject.h */,
+				D9E189201B2D3F62003BCD9A /* DEMOCustomAutoCompleteObject.m */,
+				D93BCBA11B2B7CFF000C8CD0 /* Images.xcassets */,
+				D93BCBA31B2B7CFF000C8CD0 /* LaunchScreen.xib */,
+				D93BCB981B2B7CFF000C8CD0 /* Supporting Files */,
+				D9EFE6BD1B2D313D00AEDFB6 /* MLPTextFieldTestSwift-Bridging-Header.h */,
+			);
+			path = MLPTextFieldTestSwift;
+			sourceTree = "<group>";
+		};
+		D93BCB981B2B7CFF000C8CD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D93BCB991B2B7CFF000C8CD0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D93BCBAD1B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				D93BCBB01B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests.swift */,
+				D93BCBAE1B2B7CFF000C8CD0 /* Supporting Files */,
+			);
+			path = MLPTextFieldTestSwiftTests;
+			sourceTree = "<group>";
+		};
+		D93BCBAE1B2B7CFF000C8CD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D93BCBAF1B2B7CFF000C8CD0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D93BCB941B2B7CFF000C8CD0 /* MLPTextFieldTestSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93BCBB41B2B7CFF000C8CD0 /* Build configuration list for PBXNativeTarget "MLPTextFieldTestSwift" */;
+			buildPhases = (
+				1F2171F2A0396C4D0561903F /* Check Pods Manifest.lock */,
+				D93BCB911B2B7CFF000C8CD0 /* Sources */,
+				D93BCB921B2B7CFF000C8CD0 /* Frameworks */,
+				D93BCB931B2B7CFF000C8CD0 /* Resources */,
+				BB39CF60192204DE7592276B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLPTextFieldTestSwift;
+			productName = MLPTextFieldTestSwift;
+			productReference = D93BCB951B2B7CFF000C8CD0 /* MLPTextFieldTestSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D93BCBA91B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93BCBB71B2B7CFF000C8CD0 /* Build configuration list for PBXNativeTarget "MLPTextFieldTestSwiftTests" */;
+			buildPhases = (
+				D93BCBA61B2B7CFF000C8CD0 /* Sources */,
+				D93BCBA71B2B7CFF000C8CD0 /* Frameworks */,
+				D93BCBA81B2B7CFF000C8CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D93BCBAC1B2B7CFF000C8CD0 /* PBXTargetDependency */,
+			);
+			name = MLPTextFieldTestSwiftTests;
+			productName = MLPTextFieldTestSwiftTests;
+			productReference = D93BCBAA1B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D93BCB8D1B2B7CFF000C8CD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Terry Bu";
+				TargetAttributes = {
+					D93BCB941B2B7CFF000C8CD0 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D93BCBA91B2B7CFF000C8CD0 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D93BCB941B2B7CFF000C8CD0;
+					};
+				};
+			};
+			buildConfigurationList = D93BCB901B2B7CFF000C8CD0 /* Build configuration list for PBXProject "MLPTextFieldTestSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D93BCB8C1B2B7CFF000C8CD0;
+			productRefGroup = D93BCB961B2B7CFF000C8CD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D93BCB941B2B7CFF000C8CD0 /* MLPTextFieldTestSwift */,
+				D93BCBA91B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D93BCB931B2B7CFF000C8CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93BCBA51B2B7CFF000C8CD0 /* LaunchScreen.xib in Resources */,
+				D93BCBA21B2B7CFF000C8CD0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93BCBA81B2B7CFF000C8CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F2171F2A0396C4D0561903F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB39CF60192204DE7592276B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLPTextFieldTestSwift/Pods-MLPTextFieldTestSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D93BCB911B2B7CFF000C8CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93BCB9D1B2B7CFF000C8CD0 /* ViewController.swift in Sources */,
+				D93BCB9B1B2B7CFF000C8CD0 /* AppDelegate.swift in Sources */,
+				D9E189221B2D3F62003BCD9A /* DEMOCustomAutoCompleteObject.m in Sources */,
+				D9E1891B1B2D3F2B003BCD9A /* DEMODataSource.m in Sources */,
+				D9E1891C1B2D3F2B003BCD9A /* DEMOViewController.m in Sources */,
+				D9E189211B2D3F62003BCD9A /* DEMOCustomAutoCompleteCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93BCBA61B2B7CFF000C8CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93BCBB11B2B7CFF000C8CD0 /* MLPTextFieldTestSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D93BCBAC1B2B7CFF000C8CD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D93BCB941B2B7CFF000C8CD0 /* MLPTextFieldTestSwift */;
+			targetProxy = D93BCBAB1B2B7CFF000C8CD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D93BCBA31B2B7CFF000C8CD0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D93BCBA41B2B7CFF000C8CD0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D93BCBB21B2B7CFF000C8CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D93BCBB31B2B7CFF000C8CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D93BCBB51B2B7CFF000C8CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C694988B26B8F606E843AC /* Pods-MLPTextFieldTestSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MLPTextFieldTestSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MLPTextFieldTestSwift/MLPTextFieldTestSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D93BCBB61B2B7CFF000C8CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A7D3B582C505AC02977C65 /* Pods-MLPTextFieldTestSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MLPTextFieldTestSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MLPTextFieldTestSwift/MLPTextFieldTestSwift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D93BCBB81B2B7CFF000C8CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MLPTextFieldTestSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLPTextFieldTestSwift.app/MLPTextFieldTestSwift";
+			};
+			name = Debug;
+		};
+		D93BCBB91B2B7CFF000C8CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MLPTextFieldTestSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLPTextFieldTestSwift.app/MLPTextFieldTestSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D93BCB901B2B7CFF000C8CD0 /* Build configuration list for PBXProject "MLPTextFieldTestSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93BCBB21B2B7CFF000C8CD0 /* Debug */,
+				D93BCBB31B2B7CFF000C8CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93BCBB41B2B7CFF000C8CD0 /* Build configuration list for PBXNativeTarget "MLPTextFieldTestSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93BCBB51B2B7CFF000C8CD0 /* Debug */,
+				D93BCBB61B2B7CFF000C8CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93BCBB71B2B7CFF000C8CD0 /* Build configuration list for PBXNativeTarget "MLPTextFieldTestSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93BCBB81B2B7CFF000C8CD0 /* Debug */,
+				D93BCBB91B2B7CFF000C8CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D93BCB8D1B2B7CFF000C8CD0 /* Project object */;
+}
